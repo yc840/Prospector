@@ -65,7 +65,7 @@ public void ReadLayout(string xmlText)
 
                     if (slotsX[i].HasAtt("hiddenby"))
                     {
-                        string[] hiding = slotsX[i].att("hidenby").Split(',');
+                        string[] hiding = slotsX[i].att("hiddenby").Split(',');
                         foreach(string s in hiding)
                         {
                             tSD.hiddenBy.Add(int.Parse(s));
