@@ -54,7 +54,7 @@ public void ReadLayout(string xmlText)
             }
 
             tSD.x = float.Parse(slotsX[i].att("x"));
-            tSD.x = float.Parse(slotsX[i].att("y"));
+            tSD.y = float.Parse(slotsX[i].att("y"));
             tSD.layerID = int.Parse(slotsX[i].att("layer"));
             tSD.layerName = sortingLayerNames[tSD.layerID];
             switch (tSD.type)
